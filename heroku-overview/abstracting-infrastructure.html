@@ -1,0 +1,480 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Abstracting Infrastructure | Heroku Workshop</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-quizzes/quizzes.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../heroku-overview/scalable-apps.html" />
+    
+    
+    <link rel="prev" href="../heroku-overview/developer-driven-deployment.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="Wed Apr 27 2016 22:35:30 GMT+0100 (BST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="deploy-with-heroku-button/index.html">
+            
+                
+                    <a href="../deploy-with-heroku-button/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Deploying with Heroku Button
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="getting-started/heroku-dashboard.html">
+            
+                
+                    <a href="../getting-started/heroku-dashboard.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Heroku Dashboard
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="scaling-apps/via-dashboard.html">
+            
+                
+                    <a href="../scaling-apps/via-dashboard.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Scaling via Dashboard
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="scaling-apps/index.html">
+            
+                
+                    <a href="../scaling-apps/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Scaling your app
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="heroku-overview/index.html">
+            
+                
+                    <a href="../heroku-overview/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Heroku Features in a nutshell
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="heroku-overview/developer-driven-deployment.html">
+            
+                
+                    <a href="../heroku-overview/developer-driven-deployment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Developer Driven Deployment
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="heroku-overview/abstracting-infrastructure.html">
+            
+                
+                    <a href="../heroku-overview/abstracting-infrastructure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Abstracting Infrastructure
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="heroku-overview/scalable-apps.html">
+            
+                
+                    <a href="../heroku-overview/scalable-apps.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Scaling Apps
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="heroku-overview/monitoring-performance.html">
+            
+                
+                    <a href="../heroku-overview/monitoring-performance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Monitoring Performance
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="heroku-overview/addons.html">
+            
+                
+                    <a href="../heroku-overview/addons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Addons
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="heroku-overview/heroku-status.html">
+            
+                
+                    <a href="../heroku-overview/heroku-status.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Heroku Status
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="getting-started/heroku-account.html">
+            
+                
+                    <a href="../getting-started/heroku-account.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Heroku Account
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="getting-started/heroku-toolbelt.html">
+            
+                
+                    <a href="../getting-started/heroku-toolbelt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Heroku Toolbelt
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="getting-started/authenticating-with-heroku.html">
+            
+                
+                    <a href="../getting-started/authenticating-with-heroku.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Authenticating with Heroku
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <a href="../GLOSSARY.html" class="btn pull-left" aria-label="Glossary"><i class="fa fa-sort-alpha-asc"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Heroku Workshop</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="abstracting-infrastructure">Abstracting Infrastructure</h1>
+<p>You dont need all the services or maintenance responsibities of full blown server (i.e. virtual machine) to run your application.  Even if you use DevOps tools such as Chef, Puppet &amp; Vagrant you still need to maintain the operating system, which takes time away from development.</p>
+<p>All you really want to do is run your app somewhere other than your laptop or desktop.  So Heroku gives you Dynos to run your application.</p>
+<p><img src="../images/heroku-dyno.png" alt="Heroku Dyno"></p>
+<h2 id="dynos-a-lightweight-way-to-run-your-apps">Dynos - a lightweight way to run your apps</h2>
+<p>A <a href="../GLOSSARY.html#dyno" class="glossary-term" title="An abstract way of refering to the compute resources assigned to your app.  Heroku is a lightweight container-based system, avoiding the need for you to manage and maintain servers.">dyno</a> is the name Heroku uses for a lightweight container, which is an isolated space for your application to run safely and securely.  A container runs on top of an operating system that may be shared with other containers.</p>
+<p><a href="../GLOSSARY.html#dyno" class="glossary-term" title="An abstract way of refering to the compute resources assigned to your app.  Heroku is a lightweight container-based system, avoiding the need for you to manage and maintain servers.">Dyno</a>&apos;s are very quick to create and very quick to destroy when no longer needed (compared to virtual machines).  This helps Heroku provide you with a highly scalable infrastructure without passing on the complexity to you.</p>
+<p>When you send your application to Heroku for deployment, a single file is created that represents your application.  This file is called a <a href="../GLOSSARY.html#slug" class="glossary-term" title="A bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system, ready for execution">Slug</a>.  We store each version of the <a href="../GLOSSARY.html#slug" class="glossary-term" title="A bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system, ready for execution">Slug</a> that is created for your app and when you want to scale we copy the relevant <a href="../GLOSSARY.html#slug" class="glossary-term" title="A bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system, ready for execution">slug</a> to any new dynos we create for you.</p>
+<p>When you deploy a new version of your app, a new <a href="../GLOSSARY.html#slug" class="glossary-term" title="A bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system, ready for execution">slug</a> file is created.  Then a new set of dynos are created on which this new <a href="../GLOSSARY.html#slug" class="glossary-term" title="A bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system, ready for execution">slug</a> is run, almost instantly upgrading your app to the new version.  Finally, the networking is re-routed to all the dynos running the new version of your app.</p>
+<p>To tidy up, all the dynos running the old versions of your app are swiched off.</p>
+<h3 id="dynos-in-context-of-the-infrastructure">Dynos in context of the Infrastructure</h3>
+<p>To help you put some context into Dynos and the use of containters, here is a highly simplified logical view of the PaaS infrastructure.</p>
+<p><img src="../images/infrastructure-concept-iaas-paas.png" alt="Paas and IaaS conceptual infrastructure"></p>
+<p>On Heroku, your application process runs in a container (<a href="../GLOSSARY.html#dyno" class="glossary-term" title="An abstract way of refering to the compute resources assigned to your app.  Heroku is a lightweight container-based system, avoiding the need for you to manage and maintain servers.">Dyno</a>) which in turn runs inside a virtual machine.  The virtual machines run on the physical computer hardware.</p>
+<p>Should there be an issue with the physical hardware, the virtual machine &amp; its operating sytem, a new container (<a href="../GLOSSARY.html#dyno" class="glossary-term" title="An abstract way of refering to the compute resources assigned to your app.  Heroku is a lightweight container-based system, avoiding the need for you to manage and maintain servers.">dyno</a>) can be instantly created on a working part of the infrastructure and your application process started.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../heroku-overview/developer-driven-deployment.html" class="navigation navigation-prev " aria-label="Previous page: Developer Driven Deployment"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../heroku-overview/scalable-apps.html" class="navigation navigation-next " aria-label="Next page: Scaling Apps"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-quizzes/quizzes.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"disqus":{"shortName":"heroku-workshop"},"richquotes":{"todos":true}};
+    gitbook.start(config);
+});
+</script>
+
+        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    </body>
+    
+</html>
